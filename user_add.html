@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<style>
+			.user-img {
+				width: 40px;
+				height: 40px;
+				margin-top: 5px;
+			}
+			
+			.red {
+				background-color: red;
+			}
+			
+			.page-header {
+				margin: 0;
+			}
+			
+			.pd-10{
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+					<a class="navbar-brand" href="#">OA系统</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Dashboard</a>
+						</li>
+						<li>
+							<a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a>
+						</li>
+						<li class="active">
+							<a href="user_content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;<span class="badge pull-right red">10</span>我的邮箱</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<div class="user-img">
+								<a href=""><img src="images/touxiang.jpg" class="img-responsive" /></a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-move"></span>&nbsp;&nbsp;前台首页</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /.navbar-collapse -->
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="list-group">
+						<a href="user_list.html" class="list-group-item">内容管理</a>
+						<a href="user_add.html" class="list-group-item active">添加内容</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="page-header">
+						<h5>内容管理</h5>
+					</div>
+					<ul class="nav nav-tabs">
+						<li role="presentation">
+							<a href="user_content.html">内容管理</a>
+						</li>
+						<li role="presentation" class="active">
+							<a href="user_add.html">添加内容</a>
+						</li>
+					</ul>
+					
+					<form class="pd-10">
+						<div class="form-group">
+							<label for="exampleInputEmail1">标题</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入文章标题">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">文章内容</label>
+							<textarea class="form-control" rows="10"></textarea>
+						</div>
+						<div class="checkbox pull-left">
+							<label><input type="checkbox">全局置顶</label>
+						</div>
+						<button type="submit" class="btn btn-default pull-right">Submit</button>
+					</form>
+					
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
